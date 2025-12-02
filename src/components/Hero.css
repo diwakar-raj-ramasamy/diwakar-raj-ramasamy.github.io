@@ -42,6 +42,7 @@
     margin-bottom: 1.5rem;
     background: linear-gradient(to right, #fff, #aaa);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -93,18 +94,26 @@
 }
 
 @media (max-width: 768px) {
+    .hero {
+        padding-top: 100px;
+        /* More space for fixed header on mobile */
+    }
+
     .hero-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        /* Visual on top/middle, text below */
         text-align: center;
+        gap: 2rem;
     }
 
     .hero-content {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+        max-width: 100%;
     }
 
     .hero .title {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .hero-buttons {
@@ -112,6 +121,16 @@
     }
 
     .name {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .glow-circle {
+        width: 250px;
+        height: 250px;
     }
 }

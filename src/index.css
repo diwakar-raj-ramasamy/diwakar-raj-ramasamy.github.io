@@ -53,6 +53,17 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
 button {
   cursor: pointer;
   border: none;

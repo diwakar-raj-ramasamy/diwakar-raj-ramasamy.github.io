@@ -4,6 +4,13 @@
     gap: 2rem;
 }
 
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
 .project-card {
     background-color: var(--card-bg);
     border-radius: 16px;

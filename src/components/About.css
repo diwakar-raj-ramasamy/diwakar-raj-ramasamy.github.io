@@ -1,0 +1,16 @@
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-text {
+    max-width: 800px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}

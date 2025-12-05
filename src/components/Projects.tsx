@@ -26,6 +26,12 @@ const Projects: React.FC = () => {
             description: "A simple calculator application built with Python.",
             tech: ["Python"],
             link: "https://github.com/diwakar-raj-ramasamy/Simple-Calculator"
+        },
+        {
+            title: "StudyHub",
+            description: "A central repository for collaborative learning and resource sharing.",
+            tech: ["JavaScript", "HTML", "CSS", "TypeScript", "Supabase"],
+            link: "https://github.com/diwakar-raj-ramasamy/StudyHub"
         }
     ];
 

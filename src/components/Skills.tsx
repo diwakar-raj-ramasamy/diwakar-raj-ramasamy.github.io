@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaReact, FaGitAlt, FaComments, FaLightbulb, FaUsers, FaClock, FaSyncAlt, FaBrain, FaJava, FaPython, FaGithub, FaUnity, FaFigma, FaCube, FaLayerGroup, FaPencilRuler, FaFileExcel, FaTerminal } from 'react-icons/fa';
-import { SiDart, SiBlender, SiC, SiFirebase, SiGooglecloud } from 'react-icons/si';
+import { SiDart, SiBlender, SiC, SiFirebase, SiGooglecloud, SiSupabase } from 'react-icons/si';
 import './Skills.css';
 
 const Skills: React.FC = () => {
@@ -21,7 +21,8 @@ const Skills: React.FC = () => {
         { name: "Figma", icon: <FaFigma /> },
         { name: "Command Line", icon: <FaTerminal /> },
         { name: "Firebase", icon: <SiFirebase /> },
-        { name: "Google Cloud", icon: <SiGooglecloud /> }
+        { name: "Google Cloud", icon: <SiGooglecloud /> },
+        { name: "Supabase", icon: <SiSupabase /> }
     ];
 
     const nonTechnicalSkills = [

@@ -18,8 +18,10 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
                 <div className="hero-visual">
-                    {/* Abstract visual or 3D element could go here */}
-                    <div className="glow-circle"></div>
+                    <div className="profile-image-container">
+                        <div className="blob-border"></div>
+                        <img src="/me_3d_v2.png" alt="Diwakar Raj R" className="profile-image" />
+                    </div>
                 </div>
             </div>
         </section>

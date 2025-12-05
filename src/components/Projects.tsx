@@ -4,32 +4,38 @@ import './Projects.css';
 const Projects: React.FC = () => {
     const projects = [
         {
-            title: "E-Commerce Platform",
-            description: "A full-featured online store with cart, checkout, and admin dashboard.",
-            tech: ["React", "Node.js", "MongoDB"],
-            link: "#"
-        },
-        {
-            title: "Task Management App",
-            description: "A productivity tool for teams to organize and track tasks efficiently.",
-            tech: ["TypeScript", "Firebase", "Tailwind"],
-            link: "#"
-        },
-        {
             title: "Portfolio Website",
-            description: "A personal portfolio site to showcase skills and projects (like this one!).",
-            tech: ["React", "Vanilla CSS"],
-            link: "#"
+            description: "My personal portfolio website built with React and TypeScript.",
+            tech: ["TypeScript", "React", "CSS"],
+            link: "https://github.com/diwakar-raj-ramasamy/diwakar-raj-ramasamy.github.io"
+        },
+        {
+            title: "Mathsol-Website",
+            description: "A website for mathematics solutions.",
+            tech: ["HTML", "CSS", "JavaScript"],
+            link: "https://github.com/diwakar-raj-ramasamy/Mathsol-Website"
+        },
+        {
+            title: "Resume",
+            description: "My professional resume source code.",
+            tech: ["TeX", "LaTeX"],
+            link: "https://github.com/diwakar-raj-ramasamy/resume"
+        },
+        {
+            title: "Simple Calculator",
+            description: "A simple calculator application built with Python.",
+            tech: ["Python"],
+            link: "https://github.com/diwakar-raj-ramasamy/Simple-Calculator"
         }
     ];
 
     return (
         <section id="projects" className="projects">
             <div className="container">
-                <h2>Featured Projects</h2>
+                <h2 className="animate-on-scroll">Featured Projects</h2>
                 <div className="projects-grid">
                     {projects.map((project, index) => (
-                        <div key={index} className="project-card">
+                        <div key={index} className="project-card animate-on-scroll delay-100">
                             <div className="project-content">
                                 <h3>{project.title}</h3>
                                 <p>{project.description}</p>

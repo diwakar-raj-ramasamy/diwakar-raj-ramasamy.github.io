@@ -43,6 +43,7 @@ const Header = () => {
           <a href="#about" onClick={closeMenu}>About</a>
           <a href="#skills" onClick={closeMenu}>Skills</a>
           <a href="#projects" onClick={closeMenu}>Projects</a>
+          <a href="#certificates" onClick={closeMenu}>Certificates</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
         </nav>
       </div>

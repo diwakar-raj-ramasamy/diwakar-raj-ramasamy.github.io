@@ -1,19 +1,27 @@
 import React from 'react';
-import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaComments, FaLightbulb, FaUsers, FaClock, FaSyncAlt, FaBrain } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiExpress } from 'react-icons/si';
+import { FaReact, FaGitAlt, FaComments, FaLightbulb, FaUsers, FaClock, FaSyncAlt, FaBrain, FaJava, FaPython, FaGithub, FaUnity, FaFigma, FaCube, FaLayerGroup, FaPencilRuler, FaFileExcel, FaTerminal } from 'react-icons/fa';
+import { SiDart, SiBlender, SiC, SiFirebase, SiGooglecloud } from 'react-icons/si';
 import './Skills.css';
 
 const Skills: React.FC = () => {
     const technicalSkills = [
+        { name: "Full Stack Development", icon: <FaLayerGroup /> },
         { name: "React", icon: <FaReact /> },
-        { name: "TypeScript", icon: <SiTypescript /> },
-        { name: "JavaScript", icon: <FaJs /> },
-        { name: "HTML5", icon: <FaHtml5 /> },
-        { name: "CSS3", icon: <FaCss3Alt /> },
-        { name: "Node.js", icon: <FaNodeJs /> },
-        { name: "Express", icon: <SiExpress /> },
-        { name: "MongoDB", icon: <SiMongodb /> },
-        { name: "Git", icon: <FaGitAlt /> }
+        { name: "Dart", icon: <SiDart /> },
+        { name: "C", icon: <SiC /> },
+        { name: "Java", icon: <FaJava /> },
+        { name: "UI/UX Designer", icon: <FaPencilRuler /> },
+        { name: "Python", icon: <FaPython /> },
+        { name: "3D Modeller", icon: <FaCube /> },
+        { name: "GitHub", icon: <FaGithub /> },
+        { name: "Git", icon: <FaGitAlt /> },
+        { name: "Blender", icon: <SiBlender /> },
+        { name: "Unity", icon: <FaUnity /> },
+        { name: "Excel", icon: <FaFileExcel /> },
+        { name: "Figma", icon: <FaFigma /> },
+        { name: "Command Line", icon: <FaTerminal /> },
+        { name: "Firebase", icon: <SiFirebase /> },
+        { name: "Google Cloud", icon: <SiGooglecloud /> }
     ];
 
     const nonTechnicalSkills = [
@@ -28,9 +36,9 @@ const Skills: React.FC = () => {
     return (
         <section id="skills" className="skills">
             <div className="container">
-                <h2>Skills</h2>
+                <h2 className="animate-on-scroll">Skills</h2>
 
-                <div className="skills-category">
+                <div className="skills-category animate-on-scroll delay-100">
                     <h3>Technical Skills</h3>
                     <div className="skills-grid">
                         {technicalSkills.map((skill, index) => (
@@ -42,7 +50,7 @@ const Skills: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="skills-category">
+                <div className="skills-category animate-on-scroll delay-200">
                     <h3>Non-Technical Skills</h3>
                     <div className="skills-grid">
                         {nonTechnicalSkills.map((skill, index) => (

@@ -5,9 +5,9 @@ const About: React.FC = () => {
     return (
         <section id="about" className="about">
             <div className="container">
-                <h2>About Me</h2>
+                <h2 className="animate-on-scroll">About Me</h2>
                 <div className="about-content">
-                    <div className="about-text">
+                    <div className="about-text animate-on-scroll delay-100">
                         <p>
                             I am a passionate Full stack Developer with a knack for creating elegant, efficient, and user-friendly web applications.
                             With a strong foundation in both front-end and back-end technologies, I enjoy bringing ideas to life through code.

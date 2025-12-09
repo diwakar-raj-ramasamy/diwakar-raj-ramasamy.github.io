@@ -3,6 +3,7 @@ import './Projects.css';
 
 const Projects: React.FC = () => {
     const projects = [
+
         {
             title: "Portfolio Website",
             description: "My personal portfolio website built with React and TypeScript.",
@@ -27,6 +28,12 @@ const Projects: React.FC = () => {
             tech: ["JavaScript", "HTML", "CSS", "TypeScript", "Supabase"],
             link: "https://github.com/diwakar-raj-ramasamy/StudyHub"
         },
+        {
+            title: "Chess",
+            description: "A comprehensive Chess application featuring AI opponents and multiplayer capabilities.",
+            tech: ["React", "TypeScript", "Vite"],
+            link: "https://github.com/diwakar-raj-ramasamy/Chess"
+        }, 
         {
             title: "Simple Calculator",
             description: "A simple calculator application built with Python.",

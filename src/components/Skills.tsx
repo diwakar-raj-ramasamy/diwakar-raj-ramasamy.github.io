@@ -1,18 +1,21 @@
 import React from 'react';
-import { FaReact, FaGitAlt, FaComments, FaLightbulb, FaUsers, FaClock, FaSyncAlt, FaBrain, FaJava, FaPython, FaGithub, FaUnity, FaFigma, FaCube, FaLayerGroup, FaPencilRuler, FaFileExcel, FaTerminal } from 'react-icons/fa';
-import { SiDart, SiBlender, SiC, SiFirebase, SiGooglecloud, SiSupabase } from 'react-icons/si';
+import { FaReact, FaGitAlt, FaComments, FaLightbulb, FaUsers, FaClock, FaSyncAlt, FaBrain, FaJava, FaPython, FaGithub, FaUnity, FaFigma, FaCube, FaLayerGroup, FaPencilRuler, FaFileExcel, FaTerminal, FaNodeJs } from 'react-icons/fa';
+import { SiDart, SiBlender, SiC, SiFirebase, SiGooglecloud, SiSupabase, SiTypescript, SiFlutter } from 'react-icons/si';
 import './Skills.css';
 
 const Skills: React.FC = () => {
     const technicalSkills = [
         { name: "Full Stack Development", icon: <FaLayerGroup /> },
         { name: "React", icon: <FaReact /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
+        { name: "Node.js", icon: <FaNodeJs /> },
+        { name: "Flutter", icon: <SiFlutter /> },
         { name: "Dart", icon: <SiDart /> },
         { name: "C", icon: <SiC /> },
         { name: "Java", icon: <FaJava /> },
-        { name: "UI/UX Designer", icon: <FaPencilRuler /> },
+        { name: "UI/UX Design", icon: <FaPencilRuler /> },
         { name: "Python", icon: <FaPython /> },
-        { name: "3D Modeller", icon: <FaCube /> },
+        { name: "3D Model", icon: <FaCube /> },
         { name: "GitHub", icon: <FaGithub /> },
         { name: "Git", icon: <FaGitAlt /> },
         { name: "Blender", icon: <SiBlender /> },

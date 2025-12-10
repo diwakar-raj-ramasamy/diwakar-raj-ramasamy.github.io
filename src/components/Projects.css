@@ -62,5 +62,10 @@
 .btn-sm {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
-    align-self: flex-start;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
 }

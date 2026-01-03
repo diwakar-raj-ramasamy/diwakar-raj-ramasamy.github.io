@@ -8,6 +8,7 @@ import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import BackgroundAnimation from './components/BackgroundAnimation';
+import Experience from './components/Experience';
 
 function App() {
   useEffect(() => {
@@ -43,6 +44,7 @@ function App() {
         <Hero />
         <About />
         <Skills />
+        <Experience />
         <Projects />
         <Certificates />
         <Contact />

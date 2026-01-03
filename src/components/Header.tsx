@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Header.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -34,14 +35,18 @@ const Header = () => {
       <div className="container header-container">
         <a href="#" className="logo" onClick={closeMenu}>DRR</a>
 
-        <div className="mobile-menu-btn" onClick={toggleMenu}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
+        <div className="header-controls">
+          <ThemeToggle />
+          <div className="mobile-menu-btn" onClick={toggleMenu}>
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </div>
         </div>
 
         <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
           <a href="#hero" onClick={closeMenu}>Home</a>
           <a href="#about" onClick={closeMenu}>About</a>
           <a href="#skills" onClick={closeMenu}>Skills</a>
+          <a href="#experience" onClick={closeMenu}>Experience</a>
           <a href="#projects" onClick={closeMenu}>Projects</a>
           <a href="#certificates" onClick={closeMenu}>Certificates</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>

@@ -1,14 +1,18 @@
 import React from 'react';
-import { FaReact, FaGitAlt, FaComments, FaLightbulb, FaUsers, FaClock, FaSyncAlt, FaBrain, FaJava, FaPython, FaGithub, FaUnity, FaFigma, FaCube, FaLayerGroup, FaPencilRuler, FaFileExcel, FaTerminal, FaNodeJs } from 'react-icons/fa';
-import { SiDart, SiBlender, SiC, SiFirebase, SiGooglecloud, SiSupabase, SiTypescript, SiFlutter } from 'react-icons/si';
+import { FaReact, FaGitAlt, FaComments, FaLightbulb, FaUsers, FaClock, FaSyncAlt, FaBrain, FaJava, FaPython, FaGithub, FaUnity, FaFigma, FaCube, FaPencilRuler, FaFileExcel, FaTerminal, FaNodeJs, FaHtml5, FaCss3Alt, FaJs } from 'react-icons/fa';
+import { SiDart, SiBlender, SiC, SiFirebase, SiGooglecloud, SiSupabase, SiTypescript, SiFlutter, SiMongodb, SiExpress, SiGoogleanalytics } from 'react-icons/si';
 import './Skills.css';
 
 const Skills: React.FC = () => {
     const technicalSkills = [
-        { name: "Full Stack Development", icon: <FaLayerGroup /> },
+        { name: "HTML", icon: <FaHtml5 /> },
+        { name: "CSS (Vanilla, Tailwind)", icon: <FaCss3Alt /> },
+        { name: "JavaScript", icon: <FaJs /> },
         { name: "React", icon: <FaReact /> },
         { name: "TypeScript", icon: <SiTypescript /> },
         { name: "Node.js", icon: <FaNodeJs /> },
+        { name: "Express.js", icon: <SiExpress /> },
+        { name: "Google Analytics", icon: <SiGoogleanalytics /> },
         { name: "Flutter", icon: <SiFlutter /> },
         { name: "Dart", icon: <SiDart /> },
         { name: "C", icon: <SiC /> },
@@ -25,7 +29,8 @@ const Skills: React.FC = () => {
         { name: "Command Line", icon: <FaTerminal /> },
         { name: "Firebase", icon: <SiFirebase /> },
         { name: "Google Cloud", icon: <SiGooglecloud /> },
-        { name: "Supabase", icon: <SiSupabase /> }
+        { name: "Supabase", icon: <SiSupabase /> },
+        { name: "MongoDB", icon: <SiMongodb /> },
     ];
 
     const nonTechnicalSkills = [

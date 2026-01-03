@@ -1,15 +1,28 @@
 :root {
+  /* Default Dark Theme */
   --bg-color: #0a0a0a;
   --text-color: #e0e0e0;
   --primary-color: #646cff;
-  /* Vibrant purple/blue */
   --secondary-color: #ff64d8;
-  /* Vibrant pink */
   --accent-color: #00d4ff;
-  /* Vibrant cyan */
   --card-bg: #1a1a1a;
+  --nav-bg: rgba(10, 10, 10, 0.95);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --text-muted: #a0a0a0;
   --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   --transition-speed: 0.3s;
+}
+
+[data-theme='light'] {
+  --bg-color: #ffffff;
+  --text-color: #213547;
+  --primary-color: #646cff;
+  --secondary-color: #ff64d8;
+  --accent-color: #00d4ff;
+  --card-bg: #f9f9f9;
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --text-muted: #666666;
 }
 
 * {

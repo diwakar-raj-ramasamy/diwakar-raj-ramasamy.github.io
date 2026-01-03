@@ -18,7 +18,7 @@
     align-items: flex-start;
     gap: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
 }
 
 .certificate-card:hover {
@@ -31,6 +31,8 @@
     font-size: 2.5rem;
     color: var(--primary-color);
     background: rgba(100, 108, 255, 0.1);
+    /* Keep this or use primary with opacity? */
+    /* Better to leave as is if it's primary specific tint, or use var(--primary-color) but with opacity which is hard in pure css without color-mix */
     padding: 1rem;
     border-radius: 12px;
     display: flex;
@@ -57,7 +59,7 @@
 .date {
     display: block;
     font-size: 0.9rem;
-    color: #888;
+    color: var(--text-muted);
     margin-bottom: 1rem;
 }
 

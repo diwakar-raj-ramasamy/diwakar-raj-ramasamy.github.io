@@ -13,6 +13,13 @@ const Projects: React.FC = () => {
             github: "https://github.com/diwakar-raj-ramasamy/diwakar-raj-ramasamy.github.io"
         },
         {
+            title: "Chess",
+            description: "A comprehensive Chess application featuring AI opponents and multiplayer capabilities.",
+            tech: ["React", "TypeScript", "Vite"],
+            link: "https://diwakar-raj-ramasamy.github.io/chess",
+            github: "https://github.com/diwakar-raj-ramasamy/chess"
+        },
+        {
             title: "Mathsol-Website",
             description: "A website for mathematics solutions.",
             tech: ["HTML", "CSS", "JavaScript"],
@@ -34,17 +41,24 @@ const Projects: React.FC = () => {
             buttonText: "Github"
         },
         {
-            title: "Chess",
-            description: "A comprehensive Chess application featuring AI opponents and multiplayer capabilities.",
-            tech: ["React", "TypeScript", "Vite"],
-            link: "https://diwakar-raj-ramasamy.github.io/chess",
-            github: "https://github.com/diwakar-raj-ramasamy/chess"
-        },
-        {
             title: "Simple Calculator",
             description: "A simple calculator application built with Python.",
             tech: ["Python"],
             link: "https://github.com/diwakar-raj-ramasamy/Simple-Calculator",
+            buttonText: "Github"
+        },
+        {
+            title: "Real-Time Communication App",
+            description: "A real-time chat and communication application built during CodeAlpha Internship.",
+            tech: ["React", "Node.js", "Socket.io"],
+            link: "https://github.com/diwakar-raj-ramasamy/CodeAlpha_Real-Time-Communication-App",
+            buttonText: "Github"
+        },
+        {
+            title: "SmartCart",
+            description: "A simple e-commerce site featuring product browsing and cart functionality, built during CodeAlpha Internship.",
+            tech: ["React", "CSS", "JavaScript"],
+            link: "https://github.com/diwakar-raj-ramasamy/CodeAlpha_SimpleE-CommerceSite",
             buttonText: "Github"
         }
 

@@ -17,6 +17,12 @@ const Certificates: React.FC = () => {
             link: "https://www.skills.google/public_profiles/a3789534-b84b-4b4f-836d-825ccd707b41"
         },
         {
+            title: "Google Analytics",
+            issuer: "Google",
+            date: "Dec 20, 2025 - Dec 20, 2026",
+            link: "https://skillshop.credential.net/7cd65398-54d4-461b-9f35-61e2435b101e#acc.sxnwAhRI"
+        },
+        {
             title: "GenAI Study Jam",
             issuer: "Google Cloud Platform",
             date: "",

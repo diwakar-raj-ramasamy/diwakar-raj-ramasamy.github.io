@@ -10,7 +10,7 @@
 
 .contact-content p {
     font-size: 1.2rem;
-    color: #ccc;
+    color: var(--text-muted);
     margin-bottom: 2.5rem;
 }
 

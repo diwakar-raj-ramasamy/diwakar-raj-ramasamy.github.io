@@ -8,7 +8,7 @@
 .about-text {
     max-width: 800px;
     font-size: 1.1rem;
-    color: #ccc;
+    color: var(--text-muted);
 }
 
 .about-text p {

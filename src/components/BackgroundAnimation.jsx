@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useTheme } from '../context/ThemeContext';
 
-const BackgroundAnimation: React.FC = () => {
-    const canvasRef = useRef<HTMLCanvasElement>(null);
+const BackgroundAnimation = () => {
+    const canvasRef = useRef(null);
     const { theme } = useTheme();
 
     useEffect(() => {
@@ -12,9 +12,9 @@ const BackgroundAnimation: React.FC = () => {
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
 
-        let stars: Star[] = [];
-        let meteors: Meteor[] = [];
-        let animationFrameId: number;
+        let stars = [];
+        let meteors = [];
+        let animationFrameId;
         let isPressing = false;
 
         const handleMouseDown = () => { isPressing = true; };
@@ -33,18 +33,9 @@ const BackgroundAnimation: React.FC = () => {
         };
 
         class Star {
-            x: number;
-            y: number;
-            size: number;
-            vx: number;
-            vy: number;
-            opacity: number;
-            twinkleSpeed: number;
-            twinklePhase: number;
-
             constructor() {
-                this.x = Math.random() * canvas!.width;
-                this.y = Math.random() * canvas!.height;
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
                 this.size = Math.random() * 2 + 0.5;
                 this.vx = (Math.random() - 0.5) * 0.2;
                 this.vy = (Math.random() - 0.5) * 0.2;
@@ -56,10 +47,10 @@ const BackgroundAnimation: React.FC = () => {
             update() {
                 this.x += this.vx;
                 this.y += this.vy;
-                if (this.x < 0) this.x = canvas!.width;
-                if (this.x > canvas!.width) this.x = 0;
-                if (this.y < 0) this.y = canvas!.height;
-                if (this.y > canvas!.height) this.y = 0;
+                if (this.x < 0) this.x = canvas.width;
+                if (this.x > canvas.width) this.x = 0;
+                if (this.y < 0) this.y = canvas.height;
+                if (this.y > canvas.height) this.y = 0;
 
                 this.twinklePhase += this.twinkleSpeed;
                 this.opacity = 0.5 + Math.sin(this.twinklePhase) * 0.4;
@@ -76,15 +67,7 @@ const BackgroundAnimation: React.FC = () => {
         }
 
         class Meteor {
-            x: number;
-            y: number;
-            length: number;
-            speed: number;
-            opacity: number;
-            angle: number;
-            active: boolean;
-
-            constructor(forced: boolean = false) {
+            constructor(forced = false) {
                 this.x = 0;
                 this.y = 0;
                 this.length = 0;
@@ -97,11 +80,11 @@ const BackgroundAnimation: React.FC = () => {
 
             reset() {
                 this.active = true;
-                this.x = Math.random() * canvas!.width + 200;
+                this.x = Math.random() * canvas.width + 200;
                 this.y = -100;
                 if (Math.random() > 0.5) {
                     this.x = -100;
-                    this.y = Math.random() * canvas!.height / 2;
+                    this.y = Math.random() * canvas.height / 2;
                 }
 
                 this.length = Math.random() * 80 + 20;
@@ -114,7 +97,7 @@ const BackgroundAnimation: React.FC = () => {
                 this.x += this.speed * Math.cos(this.angle);
                 this.y += this.speed * Math.sin(this.angle);
 
-                if (this.x > canvas!.width + 100 || this.y > canvas!.height + 100) {
+                if (this.x > canvas.width + 100 || this.y > canvas.height + 100) {
                     this.active = false; // Mark for reuse or removal
                 }
             }
@@ -155,8 +138,8 @@ const BackgroundAnimation: React.FC = () => {
             for (let i = 0; i < 2; i++) {
                 const m = new Meteor(true);
                 // Randomize positions to start mid-air
-                m.x = Math.random() * canvas!.width;
-                m.y = Math.random() * canvas!.height;
+                m.x = Math.random() * canvas.width;
+                m.y = Math.random() * canvas.height;
                 meteors.push(m);
             }
         };

@@ -1,28 +1,20 @@
-import React from 'react';
 import './Experience.css';
 
-const Experience: React.FC = () => {
+const Experience = () => {
     const experiences = [
         {
-            company: "Woject",
-            role: "Web Developer Intern",
-            date: "2025 Dec 10 - 2026 Mar 10",
-            description: "Contributed to the development of responsive web applications, optimizing performance and ensuring cross-browser compatibility. Assisted in building reusable components and integrating APIs to enhance user experience.",
-            link: "https://drive.google.com/file/d/1tJTSreSO5L6D1HoUifs8wgfk73zVfebv/view?usp=drive_link"
+            company: "Aara Tech Pvt Ltd (Thozhil)",
+            role: "Software Developer Intern",
+            date: "06/2026 – 07/2026",
+            description: "Developed a web-based Visitor Management System during Software Development Internship to digitize visitor registration, check-in/check-out, and secure record management. Built responsive frontend interfaces, integrated REST APIs with database operations, and improved visitor tracking and administrative efficiency.",
+            link: "https://drive.google.com/file/d/1tUuzWNyQxshKU5E_kXlx4CCebIsqOt1q/view?usp=sharing"
         },
         {
             company: "CodeAlpha",
-            role: "Full Stack Developer",
-            date: "2026 Jan 01 - 2026 Jan 31",
-            description: "Developed and maintained full-stack web applications using modern technologies like React and Node.js. Collaborated with the team to design and implement scalable user interfaces and robust backend APIs, ensuring high performance and responsiveness.",
+            role: "Full Stack Development Intern",
+            date: "01/2026 – 01/2026",
+            description: "Completed a 1-month Full Stack Development Internship at CodeAlpha, where I developed real-world web applications, including a Real-Time Communication App and an E-Commerce Website, enhancing my full-stack development skills.",
             link: "https://drive.google.com/file/d/15xEjCNX1dTF3kGSWXk20aOrZcbgfuMiL/view?usp=drive_link"
-        },
-        {
-            company: "CodSoft",
-            role: "Android App Developer",
-            date: "2026 Jan 01 - 2026 Jan 31",
-            description: "Designed and developed user-friendly Android applications using Java and Flutter. Implemented responsive UI components, integrated RESTful APIs for data synchronization, and optimized app performance across various devices.",
-            link: "https://drive.google.com/file/d/1FVhFNwsfOGZwOhLk7dAkz99AfsGUiZBf/view?usp=drive_link"
         }
     ];
 
